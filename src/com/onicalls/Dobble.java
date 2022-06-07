@@ -54,23 +54,37 @@ public class Dobble {
             card.addElements(i);
         }
         cardSet.add(card);
-        for (int j=1; j<=numElm; j++) {
+        for (int j=1; j<numElm; j++) {
             card = new Card();
             card.addElements(1);
-            for (int k=1; k<=numElm; k++) {
-                    card.addElements(numElm * j + (k+1));
+            for (int k=1; k<numElm; k++) {
+                    card.addElements(((numElm-1) * j + (k+1)));
                 }
             cardSet.add(card);
         }
-        for (int i= 1; i<=numElm; i++) {
-            for (int j=1; j<=numElm; j++) {
+        for (int i= 1; i<numElm; i++) {
+            for (int j=1; j<numElm; j++) {
                 card = new Card();
                 card.addElements(i+1);
-                for (int k=1; k<= numElm; k++) {
-                        card.addElements(numElm+2+numElm*(k-1)+(((i-1)*(k-1)+j-1) % numElm));
+                for (int k=1; k<numElm; k++) {
+                        card.addElements(((numElm-1)+2+(numElm-1)*(k-1)+(((i-1)*(k-1)+j-1) % (numElm-1))));
                     }
                 cardSet.add(card);
             }
         }
+    }
+
+    public void generateCards(int limit){
+        createCards();
+        cardSet = new ArrayList<Card>(cardSet.subList(0, limit));
+    }
+
+    @Override
+    public String toString() {
+        return "Dobble{" +
+                "numElm=" + numElm +
+                ", numCards=" + numCards +
+                ", cardSet=" + cardSet.toString() +
+                '}';
     }
 }

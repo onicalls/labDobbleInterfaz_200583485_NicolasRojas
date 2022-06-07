@@ -1,8 +1,6 @@
 package com.onicalls;
 
-import java.sql.Array;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -31,14 +29,21 @@ public class Main {
                         idPlayer = idPlayer+1;
                         numPlayers = numPlayers-1;
                         playerList.add(player);
+                        for(Player p: playerList) {
+                            String playerString = p.toString();
+                            System.out.println(playerString);
+                        }
                     }
                     System.out.println("Inserte número de elementos por carta:");
                     Scanner numElmIn = new Scanner(System.in);
-                    int numElm = numPlayersIn.nextInt();
+                    int numElm = numElmIn.nextInt();
+                    System.out.println("Inserte número máximo de cartas:");
                     Scanner numCardsIn = new Scanner(System.in);
                     int numCards = numCardsIn.nextInt();
                     Dobble dobble = new Dobble(numElm,numCards);
-                    dobble.createCards();
+                    dobble.generateCards(numCards);
+                    String dobbleString = dobble.toString();
+                    System.out.println(dobbleString);
                     break;
                 case 2:
                     System.out.println("¡Gracias por jugar!");

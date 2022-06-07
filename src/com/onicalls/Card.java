@@ -1,9 +1,10 @@
 package com.onicalls;
 
+import java.net.Inet4Address;
 import java.util.ArrayList;
 
 public class Card {
-    ArrayList<Integer> elements;
+    ArrayList<Integer> elements = new ArrayList<>();
 
     public ArrayList<Integer> getElements() {
         return elements;
@@ -14,16 +15,13 @@ public class Card {
     }
 
     public void addElements(int element){
-        ArrayList<Integer> newElements = getElements();
-        newElements.add(element);
-        setElements(newElements);
+        elements.add(element);
     }
 
     @Override
     public String toString() {
-        for(Integer element: elements){
-            System.out.print(element+", ");
-        }
-        return "\n";
+        return "Card{" +
+                "elements=" + elements +
+                '}';
     }
 }
