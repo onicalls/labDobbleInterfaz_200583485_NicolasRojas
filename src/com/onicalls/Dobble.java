@@ -1,6 +1,7 @@
 package com.onicalls;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -77,6 +78,7 @@ public class Dobble {
     public void generateCards(int limit){
         createCards();
         cardSet = new ArrayList<Card>(cardSet.subList(0, limit));
+        Collections.shuffle(cardSet);
     }
 
     @Override
