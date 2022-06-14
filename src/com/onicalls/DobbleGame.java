@@ -9,4 +9,6 @@ public class DobbleGame {
     int numCards;
     Dobble cardsSet;
     String state = "En partidaxd";
+
+
 }
