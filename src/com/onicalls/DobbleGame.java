@@ -8,5 +8,5 @@ public class DobbleGame {
     int numElm;
     int numCards;
     Dobble cardsSet;
-    String state = "En partidi";
+    String state = "En partidaxd";
 }
