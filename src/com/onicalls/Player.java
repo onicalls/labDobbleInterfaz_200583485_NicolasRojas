@@ -1,20 +1,14 @@
 package com.onicalls;
 
 public class Player {
-    int id = 0;
     String name = "";
     boolean turn = false;
     int points = 0;
 
-    public Player(int id, String name, boolean turn, int points) {
-        this.id = id;
+    public Player(String name, boolean turn, int points) {
         this.name = name;
         this.turn = turn;
         this.points = points;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public String getName() {
@@ -27,10 +21,6 @@ public class Player {
 
     public int getPoints() {
         return points;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public void setName(String name) {
@@ -61,7 +51,6 @@ public class Player {
     @Override
     public String toString() {
         return "Player{" +
-                "id=" + id +
                 ", name='" + name + '\'' +
                 ", turn=" + turn +
                 ", points=" + points +

@@ -7,43 +7,50 @@ public class Main {
 
     public static void main(String[] args) {
         int option = 0;
-        int idPlayer = 1;
         ArrayList<Player> playerList = new ArrayList<>();
         while (option<2) {
             System.out.println("### ¡BIENVENIDO A DOBBLE! ###\n");
             System.out.println("Seleccione un número:\n1. Nueva Partida\n2. Salir");
             Scanner in = new Scanner(System.in);
             option = in.nextInt();
-            switch (option){
+            switch (option) {
                 case 1:
                     System.out.println("Inserte número de jugadores: ");
                     int numPlayers;
                     Scanner numPlayersIn = new Scanner(System.in);
                     numPlayers = numPlayersIn.nextInt();
-                    while (numPlayers>0) {
-                        System.out.println("Inserte nombre del jugador: ");
-                        String playerName;
-                        Scanner playerNameIn = new Scanner(System.in);
-                        playerName = playerNameIn.nextLine();
-                        Player player = new Player(idPlayer , playerName, false, 0);
-                        idPlayer = idPlayer+1;
-                        numPlayers = numPlayers-1;
-                        playerList.add(player);
-                        for(Player p: playerList) {
-                            String playerString = p.toString();
-                            System.out.println(playerString);
-                        }
-                    }
+                    DobbleGame dobbleGame = new DobbleGame();
+                    dobbleGame.register(numPlayers);
                     System.out.println("Inserte número de elementos por carta:");
                     Scanner numElmIn = new Scanner(System.in);
                     int numElm = numElmIn.nextInt();
                     System.out.println("Inserte número máximo de cartas:");
                     Scanner numCardsIn = new Scanner(System.in);
                     int numCards = numCardsIn.nextInt();
-                    Dobble dobble = new Dobble(numElm,numCards);
+                    Dobble dobble = new Dobble(numElm, numCards);
                     dobble.generateCards(numCards);
                     String dobbleString = dobble.toString();
-                    System.out.println(dobbleString);
+                    dobbleGame.setCardsSet(dobble);
+                    dobbleGame.setNumPlayers(numPlayers);
+                    dobbleGame.setNumCards(numCards);
+                    dobbleGame.setNumElm(numElm);
+                    System.out.println(dobbleGame);
+                    int optionGame = 0;
+                    while (optionGame < 4) {
+                        System.out.println("### ¡COMIENZA A GUGAR! ###\n");
+                        System.out.println("Seleccione un número:\n1. Hacer Jugada\n2. Mostrar Turno\n3. Finalizar Juego.");
+                        in = new Scanner(System.in);
+                        optionGame = in.nextInt();
+                        switch (option) {
+                            case 1:
+                                dobbleGame.play();
+                                break;
+                            case 2:
+                                break;
+                            case 3:
+                                break;
+                        }
+                    }
                     break;
                 case 2:
                     System.out.println("¡Gracias por jugar!");
