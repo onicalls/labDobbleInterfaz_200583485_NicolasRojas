@@ -81,6 +81,10 @@ public class Dobble {
         Collections.shuffle(cardSet);
     }
 
+    public static boolean compareCards(int element, Card C1, Card C2){
+        return (C1.elements.contains(element) && C2.elements.contains(element));
+    }
+
     @Override
     public String toString() {
         return "Dobble{" +

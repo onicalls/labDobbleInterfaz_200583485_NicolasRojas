@@ -15,7 +15,7 @@ public class Player {
         return name;
     }
 
-    public boolean isTurn() {
+    public boolean getTurn() {
         return turn;
     }
 
@@ -40,7 +40,7 @@ public class Player {
     }
 
     public void changeTurn(boolean turn){
-        if(isTurn()){
+        if(getTurn()){
             setTurn(false);
         }
         else{

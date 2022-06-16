@@ -36,6 +36,7 @@ public class Main {
                     dobbleGame.setNumElm(numElm);
                     System.out.println(dobbleGame);
                     int optionGame = 0;
+                    dobbleGame.playerList.get(0).setTurn(true);
                     while (optionGame < 4) {
                         System.out.println("### ¡COMIENZA A GUGAR! ###\n");
                         System.out.println("Seleccione un número:\n1. Hacer Jugada\n2. Mostrar Turno\n3. Finalizar Juego.");

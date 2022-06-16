@@ -1,6 +1,7 @@
 package com.onicalls;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class DobbleGame {
@@ -74,6 +75,22 @@ public class DobbleGame {
     public void setState(String state) {
         this.state = state;
     }
+
+    public void play(){
+        for(Player p: playerList){
+            if (p.getTurn()){
+                Collections.shuffle(cardsSet.getCardSet());
+                System.out.println("Se han dado vuelta 2 cartas. \nIndique el número que tienen en común:");
+                Card C1 = cardsSet.getCardSet().get(0);
+                Card C2 = cardsSet.getCardSet().get(1);
+                int element;
+                Scanner elementIn = new Scanner(System.in);
+                element = elementIn.nextInt();
+                if(Dobble.compareCards(element, C1, C2)) {System.out.println("El jugador ha ganado 2 puntos.");}
+                else{System.out.println("El jugador se ha equivocado.");}
+                }
+            }
+        }
 
     @Override
     public String toString() {
