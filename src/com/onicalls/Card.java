@@ -3,7 +3,7 @@ package com.onicalls;
 import java.net.Inet4Address;
 import java.util.ArrayList;
 
-public class Card {
+public class Card implements Carta{
     ArrayList<Integer> elements = new ArrayList<>();
 
     public ArrayList<Integer> getElements() {
@@ -20,8 +20,6 @@ public class Card {
 
     @Override
     public String toString() {
-        return "Card{" +
-                "elements=" + elements +
-                '}';
+        return "Carta: " + elements;
     }
 }

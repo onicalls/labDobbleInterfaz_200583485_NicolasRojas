@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Dobble {
+public class Dobble implements Cartas{
     int numElm;
     int numCards;
     List<Integer> elements = IntStream.range(1, 100).boxed().collect(Collectors.toList());
@@ -77,7 +77,7 @@ public class Dobble {
 
     public void generateCards(int limit){
         createCards();
-        cardSet = new ArrayList<Card>(cardSet.subList(0, limit));
+        cardSet = new ArrayList<>(cardSet.subList(0, limit));
         Collections.shuffle(cardSet);
     }
 

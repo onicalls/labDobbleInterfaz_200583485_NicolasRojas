@@ -1,6 +1,6 @@
 package com.onicalls;
 
-public class Player {
+public class Player implements Jugador{
     String name = "";
     boolean turn = false;
     int points = 0;
@@ -39,21 +39,8 @@ public class Player {
         setPoints(points+pointsToAdd);
     }
 
-    public void changeTurn(boolean turn){
-        if(getTurn()){
-            setTurn(false);
-        }
-        else{
-            setTurn(true);
-        }
-    }
-
     @Override
     public String toString() {
-        return "Player{" +
-                ", name='" + name + '\'' +
-                ", turn=" + turn +
-                ", points=" + points +
-                '}';
+        return "Jugador: [" + name + ", Turno=" + turn + ", Puntos=" + points + ']';
     }
 }

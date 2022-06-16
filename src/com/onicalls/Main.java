@@ -8,9 +8,9 @@ public class Main {
     public static void main(String[] args) {
         int option = 0;
         ArrayList<Player> playerList = new ArrayList<>();
-        while (option<2) {
+        while (option<3) {
             System.out.println("### ¡BIENVENIDO A DOBBLE! ###\n");
-            System.out.println("Seleccione un número:\n1. Nueva Partida\n2. Salir");
+            System.out.println("Seleccione un número:\n1. Partida Multijugador\n2. Partida VS CPU\n3. Salir.");
             Scanner in = new Scanner(System.in);
             option = in.nextInt();
             switch (option) {
@@ -37,14 +37,15 @@ public class Main {
                     System.out.println(dobbleGame);
                     int optionGame = 0;
                     dobbleGame.playerList.get(0).setTurn(true);
+                    System.out.println("### ¡COMIENZA A JUGAR! ###\n");
                     while (optionGame < 4) {
-                        System.out.println("### ¡COMIENZA A GUGAR! ###\n");
-                        System.out.println("Seleccione un número:\n1. Hacer Jugada\n2. Mostrar Turno\n3. Finalizar Juego.");
+                        System.out.println("Seleccione un número:\n1. Hacer Jugada\n2. Ver puntuación\n3. Finalizar Juego.");
                         in = new Scanner(System.in);
                         optionGame = in.nextInt();
                         switch (option) {
                             case 1:
                                 dobbleGame.play();
+                                dobbleGame.nextTurn();
                                 break;
                             case 2:
                                 break;
