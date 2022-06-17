@@ -3,13 +3,21 @@ package com.onicalls;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+/**
+ * Clase Dobble que implementa los métodos de la interfaz Cartas.
+ */
 public class Dobble implements Cartas{
+    //Número de elementos
     int numElm;
+    //Número de cartas
     int numCards;
+    //Lista de elementos disponibles del 1 al 100 para la generación de cartas
     List<Integer> elements = IntStream.range(1, 100).boxed().collect(Collectors.toList());
+    //Mazo de cartas
     ArrayList<Card> cardSet = new ArrayList<>();
 
     public Dobble(int numElm, int numCards) {
@@ -49,6 +57,9 @@ public class Dobble implements Cartas{
         this.cardSet = cardSet;
     }
 
+    /**
+     * Función que crea un conjunto de cartas válidos.
+     */
     public void createCards(){
         Card card = new Card();
         for (int i = 1; i<= numElm; i++) {
@@ -75,12 +86,27 @@ public class Dobble implements Cartas{
         }
     }
 
+    /**
+     * Función que limita el número de cartas que puede tener un mazo y además aleatoriza.
+     * Entrada: limit (int)
+     * Salida: cartas actualizadas.
+     */
     public void generateCards(int limit){
-        createCards();
-        cardSet = new ArrayList<>(cardSet.subList(0, limit));
-        Collections.shuffle(cardSet);
+        if(limit==0){
+            createCards();
+        }
+        else{
+            createCards();
+            cardSet = new ArrayList<>(cardSet.subList(0, limit));
+            Collections.shuffle(cardSet);
+        }
     }
 
+    /**
+     * Función estática que compara si el dato que ha colocado el jugador es el mismo en ambas cartas
+     * Entrada: element (int), C1 (Card), C2 (Card)
+     * Salida: verdadero o falso (boolean)
+     */
     public static boolean compareCards(int element, Card C1, Card C2){
         return (C1.elements.contains(element) && C2.elements.contains(element));
     }
@@ -92,5 +118,18 @@ public class Dobble implements Cartas{
                 ", numCards=" + numCards +
                 ", cardSet=" + cardSet.toString() +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Dobble dobble = (Dobble) o;
+        return numElm == dobble.numElm && numCards == dobble.numCards && Objects.equals(elements, dobble.elements) && Objects.equals(cardSet, dobble.cardSet);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(numElm, numCards, elements, cardSet);
     }
 }

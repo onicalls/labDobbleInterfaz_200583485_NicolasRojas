@@ -1,5 +1,8 @@
 package com.onicalls;
 
+/**
+ * Intefaz Cartas que contiene los métodos que utilizará la clase Dobble.
+ */
 public interface Cartas {
     void createCards();
     void generateCards(int limit);
