@@ -1,0 +1,23 @@
+Instrucciones de uso:
+
+Para el correcto uso de este programa debe seguir cuidadosamente las siguientes reglas:
+1) Lo primero es revisar que los archivos mencionados en el punto 2.5 estén agregados
+correctamente dentro de la carpeta de su ordenador.
+2) Puede hacer uso de un IDE como InteliJ IDEA para abrir el proyecto y ejecutarlo
+desde el botón RUN en la clase labDobbleJava_200583485_NicolasRojas.
+3) Para ejecutar el código desde la consola de Windows, primero se deben compilar
+todas clases, comenzando por aquellas que no dependen de otras utilizando el
+comando javac. Y luego, para ejecutar se utiliza el mismo comando, seguido de la
+clase principal.
+4) Al ejecutar el programa le pedirá al usuario que ingrese un número del 1 al 3, donde
+1 es para jugar contra otros jugadores, 2 para jugar contra el CPU y 3 para terminar.
+5) En caso de haber elegido 1, el programa preguntará por el número de jugadores, el
+cual es un número entero mayor a 2. Inmediatamente el programa le pedirá que
+ingrese los nombres de los jugadores. Finalmente preguntará la cantidad de
+elementos que debe tener una carta (intente no usar números mayores a 10) y la
+cantidad máxima de cartas a generar (si no sabe escriba 0).
+6) El programa le pedirá al usuario que ingrese un número del 1 al 3, donde 1 es para
+jugar, 2 para ver los puntajes y 3 para terminar el juego. Si escribe 1, el programa
+indicará de quién es el turno, pedirá un elemento, indicará si ganó o perdió y luego
+pasará el turno al siguiente jugador. Si elige 2 mostrará el puntaje de todos los
+jugadores registrados. Para finalizar el juego debe presionar 3.rar

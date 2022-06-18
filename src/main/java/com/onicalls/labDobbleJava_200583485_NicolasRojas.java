@@ -7,7 +7,7 @@ package com.onicalls;
  * Profesor encargado: Miguel Trufa
  */
 
-public class Main {
+public class labDobbleJava_200583485_NicolasRojas {
     public static void main(String[] args) {
         MenuPrincipal.mainMenu();
     }
