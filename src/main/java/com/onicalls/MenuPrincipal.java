@@ -22,7 +22,7 @@ public class MenuPrincipal extends JFrame implements ActionListener {
      */
 
     public MenuPrincipal(){
-        super("Dobble 0.1");
+        super("Dobble Interfaz");
         setSize(500, 500);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
