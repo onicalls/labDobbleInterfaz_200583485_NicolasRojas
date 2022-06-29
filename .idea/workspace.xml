@@ -4,43 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8997a149-7180-4a0f-9aaf-f540c63f7362" name="Changes" comment="finalmente ahora si por fin">
-      <change afterPath="$PROJECT_DIR$/autoevaluacion.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/labDobble_20058348_RojasGonzalez.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leeme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repositorio.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/onicalls/Card.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/onicalls/Carta.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/onicalls/Cartas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/onicalls/Dobble.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/onicalls/DobbleGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/onicalls/Jugador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/onicalls/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/onicalls/MenuCPU.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/onicalls/MenuMultijugador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/onicalls/MenuPrincipal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/onicalls/Mesa.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/onicalls/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onicalls/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onicalls/labDobbleJava_200583485_NicolasRojas.java" afterDir="false" />
+    <list default="true" id="8997a149-7180-4a0f-9aaf-f540c63f7362" name="Changes" comment="intro">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/labDobbleJava_200583485_NicolasRojas/com/onicalls/Carta.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/labDobbleJava_200583485_NicolasRojas/com/onicalls/Cartas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/labDobbleJava_200583485_NicolasRojas/com/onicalls/Jugador.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/labDobbleJava_200583485_NicolasRojas/com/onicalls/MenuCPU.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/labDobbleJava_200583485_NicolasRojas/com/onicalls/MenuMultijugador.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/labDobbleJava_200583485_NicolasRojas/com/onicalls/MenuPrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/labDobbleJava_200583485_NicolasRojas/com/onicalls/Mesa.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onicalls/labDobbleIntefaz_200583485_NicolasRojas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoevaluacion.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/onicalls/MenuPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/onicalls/MenuPrincipal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/onicalls/labDobbleJava_200583485_NicolasRojas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3_200583485_NicolasRojas.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labDobble_20058348_RojasGonzalez.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leeme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labDobbleJava_200583485_NicolasRojas/com/onicalls/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labDobbleJava_200583485_NicolasRojas/com/onicalls/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labDobbleJava_200583485_NicolasRojas/com/onicalls/Dobble.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labDobbleJava_200583485_NicolasRojas/com/onicalls/Dobble.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labDobbleJava_200583485_NicolasRojas/com/onicalls/DobbleGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labDobbleJava_200583485_NicolasRojas/com/onicalls/DobbleGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labDobbleJava_200583485_NicolasRojas/com/onicalls/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labDobbleJava_200583485_NicolasRojas/com/onicalls/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/labDobbleJava_200583485_NicolasRojas/com/onicalls/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/labDobbleJava_200583485_NicolasRojas/com/onicalls/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repositorio.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onicalls/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onicalls/MenuPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onicalls/labDobbleJava_200583485_NicolasRojas.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,17 +57,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="labDobbleJava11_200583485_NicolasRojas" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="labDobbleJava11_200583485_NicolasRojas" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -79,12 +66,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2AilRJOMm9BWeZRiMSIWVt8p8OL" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -95,6 +83,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -103,10 +92,9 @@
       <recent name="C:\Users\onica\OneDrive\Documentos\GitHub\labDobbleJava_200583485_NicolasRojas" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.labDobbleJava_200583485_NicolasRojas">
-    <configuration name="labDobbleJava_200583485_NicolasRojas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.onicalls.labDobbleJava_200583485_NicolasRojas" />
-      <module name="labDobbleJava11_200583485_NicolasRojas.main" />
+  <component name="RunManager" selected="Application.labDobbleIntefaz_200583485_NicolasRojas">
+    <configuration name="labDobbleIntefaz_200583485_NicolasRojas" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.onicalls.labDobbleIntefaz_200583485_NicolasRojas" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.onicalls.*" />
@@ -138,7 +126,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.labDobbleJava_200583485_NicolasRojas" />
         <item itemvalue="Gradle.labDobbleJava_200583485_NicolasRojas" />
       </list>
     </recent_temporary>

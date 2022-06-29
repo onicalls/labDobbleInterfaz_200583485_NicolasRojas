@@ -1,6 +1,0 @@
-Constructor 1
-register 1
-play 1
-toString 1
-equals 1
-vs CPU 1
