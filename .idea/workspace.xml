@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8997a149-7180-4a0f-9aaf-f540c63f7362" name="Changes" comment="intro">
-      <change afterPath="$PROJECT_DIR$/labDobbleIntefaz_200583485_NicolasRojas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/onicalls/MenuPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/onicalls/MenuPrincipal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onicalls/MenuMultijugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onicalls/MenuMultijugador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onicalls/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onicalls/MenuPrincipal.java" afterDir="false" />
-    </list>
+    <list default="true" id="8997a149-7180-4a0f-9aaf-f540c63f7362" name="Changes" comment="intro" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,7 +126,7 @@
       <updated>1655500276715</updated>
       <workItem from="1655500278630" duration="475000" />
       <workItem from="1655513399650" duration="1285000" />
-      <workItem from="1656527039843" duration="2674000" />
+      <workItem from="1656527039843" duration="2855000" />
     </task>
     <task id="LOCAL-00001" summary="finalmente ahora si por fin">
       <created>1655500396068</created>
