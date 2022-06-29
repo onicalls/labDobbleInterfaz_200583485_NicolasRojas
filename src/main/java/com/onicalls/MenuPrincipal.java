@@ -46,8 +46,12 @@ public class MenuPrincipal extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         try{
-            if(e.getSource() == button3){
+            if(e.getSource() == button1){
                 this.setVisible(false);
+                new MenuMultijugador().setVisible(true);
+            }
+            if(e.getSource() == button3){
+                this.dispose();
             }
         } catch (Exception exception) {
             JOptionPane.showMessageDialog(this, "Error!");
