@@ -31,13 +31,17 @@ public class MenuMultijugador extends JFrame implements ActionListener{
         add(nNext);
         setLayout(new GridLayout(0, 1));
         nNext.addActionListener(this);
+        var listModel = new DefaultListModel();
+        listModel.addElement("patat0");
+        var namesListComponent = new JList(listModel);
+        add(namesListComponent);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         try {
             if (e.getSource() == nNext) {
-                this.dispose();
+                this.setVisible(false);
             }
         } catch (Exception exception) {
             JOptionPane.showMessageDialog(this, "Error!");

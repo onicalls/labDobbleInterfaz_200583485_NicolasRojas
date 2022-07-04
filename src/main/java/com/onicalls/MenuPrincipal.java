@@ -47,7 +47,6 @@ public class MenuPrincipal extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         try{
             if(e.getSource() == button1){
-                this.setVisible(false);
                 new MenuMultijugador().setVisible(true);
             }
             if(e.getSource() == button3){
