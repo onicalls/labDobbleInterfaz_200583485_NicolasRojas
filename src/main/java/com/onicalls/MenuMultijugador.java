@@ -32,7 +32,7 @@ public class MenuMultijugador extends JFrame implements ActionListener{
         setLayout(new GridLayout(0, 1));
         nNext.addActionListener(this);
         var listModel = new DefaultListModel();
-        listModel.addElement("patat0");
+        listModel.addElement("patate");
         var namesListComponent = new JList(listModel);
         add(namesListComponent);
     }
