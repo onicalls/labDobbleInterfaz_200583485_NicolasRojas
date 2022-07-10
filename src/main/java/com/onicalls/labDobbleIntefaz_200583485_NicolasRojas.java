@@ -1,5 +1,7 @@
 package com.onicalls;
 
+import com.onicalls.gui.MenuPrincipal;
+
 /**
  * Dobble en el paradigma orientado a objetos
  * Alumno: Nicolás Rojas

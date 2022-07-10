@@ -67,23 +67,31 @@ public class DobbleGame implements Mesa{
         this.state = state;
     }
 
-    /** Función play que tomar 2 cartas aleatorias y pregunta un elemento al jugador para añadir puntaje. */
-    public void play(){
+    /** Función play que tomar 2 cartas aleatorias y pregunta un elemento al jugador para añadir puntaje.
+     * @return*/
+    public String play(int element){
         for(Player p: playerList){
             if (p.getTurn()){
                 Collections.shuffle(cardsSet.getCardSet());
-                System.out.println("Se han dado vuelta 2 cartas. \nEl jugador " + p.getName() + " debe indicar el número que tienen en común:");
+                String win = "El jugador " + p.getName() + " ha acertado. Las cartas eran: ";
                 Card C1 = cardsSet.getCardSet().get(0);
                 Card C2 = cardsSet.getCardSet().get(1);
-                int element;
-                Scanner elementIn = new Scanner(System.in);
-                element = elementIn.nextInt();
-                if(Dobble.compareCards(element, C1, C2)) {System.out.println("El jugador ha ganado 2 puntos.");}
-                else{System.out.println("El jugador se ha equivocado.");}
-                System.out.println("Las cartas eran: " +  C1.toString() + " y "  + C2.toString());
+                if(Dobble.compareCards(element, C1, C2)) {System.out.println("El jugador ha ganado 2 puntos.");p.addPoints(p.getPoints(),2);}
+                else{win = "El jugador "+ p.getName() +" se ha equivocado. Las cartas eran: ";}
+                return win + C1.toString() + " y "  + C2.toString();
                 }
             }
+        return "";
+    }
+
+    public String getNameTurn(){
+        for(Player p: playerList) {
+            if (p.getTurn()) {
+                return p.getName();
+            }
         }
+        return "Error";
+    }
 
     /** Función nextTurn que termina el turno del jugador y actualiza el estado del siguiente jugador. */
     public void nextTurn(){
@@ -117,58 +125,32 @@ public class DobbleGame implements Mesa{
     }
 
     /** Función play que tomar 2 cartas aleatorias y pregunta un elemento al jugador para añadir puntaje, y luego la CPU juega automáticamente. */
-    public void playCPU(){
-        for(Player p: playerList){
-            if (p.getTurn()){
-                Collections.shuffle(cardsSet.getCardSet());
-                System.out.println("Se han dado vuelta 2 cartas. \nEl jugador " + p.getName() + " debe indicar el número que tienen en común:");
-                Card C1 = cardsSet.getCardSet().get(0);
-                Card C2 = cardsSet.getCardSet().get(1);
-                int element;
-                Scanner elementIn = new Scanner(System.in);
-                element = elementIn.nextInt();
-                if(Dobble.compareCards(element, C1, C2)) {System.out.println("El jugador ha ganado 2 puntos.");p.addPoints(p.points,2);}
-                else{System.out.println("El jugador se ha equivocado.");}
-                System.out.println("Las cartas eran: " +  C1.toString() + " y "  + C2.toString());
-            }
-            else{
-                Collections.shuffle(cardsSet.getCardSet());
+    public String playCPU() {
+        for(Player p : playerList) {
+            if (p.getTurn()) {
                 Random rand = new Random();
                 int randomNum = rand.nextInt((cardsSet.cardSet.size() - 1) + 1) + 1;
-                System.out.println("\nSe han dado vuelta 2 cartas. \nEl jugador CPU ha indicado el número: " + randomNum);
+                Collections.shuffle(cardsSet.getCardSet());
+                String win = "El jugador CPU ha acertado. Las cartas eran: ";
                 Card C1 = cardsSet.getCardSet().get(0);
                 Card C2 = cardsSet.getCardSet().get(1);
-                if(Dobble.compareCards(randomNum, C1, C2)) {System.out.println("El jugador ha ganado 2 puntos.");}
-                else{System.out.println("El jugador se ha equivocado.");}
-                System.out.println("Las cartas eran: " +  C1.toString() + " y "  + C2.toString());
+                if (Dobble.compareCards(randomNum, C1, C2)) {
+                    p.addPoints(p.getPoints(), 2);
+                } else {
+                    win = "El jugador CPU se ha equivocado. Las cartas eran: ";
+                }
+                return win + C1.toString() + " y " + C2.toString();
             }
         }
+        return "";
     }
 
     /** Función que registra jugadores en el modo multijugador. */
-    public void register(int numPlayers){
-        while (numPlayers>0) {
-            System.out.println("Inserte nombre del jugador: ");
-            String playerName;
-            Scanner playerNameIn = new Scanner(System.in);
-            playerName = playerNameIn.nextLine();
+    public void register(ArrayList<String> namePlayerList){
+        for(String playerName : namePlayerList){
             Player player = new Player(playerName, false, 0);
-            numPlayers = numPlayers - 1;
             playerList.add(player);
         }
-    }
-
-    /** Función que registra un único jugador en el modo VS CPU. */
-    public void registerCPU(int numPlayers){
-            System.out.println("Inserte nombre del jugador: ");
-            String playerName;
-            String CPUName = "CPU";
-            Scanner playerNameIn = new Scanner(System.in);
-            playerName = playerNameIn.nextLine();
-            Player player = new Player(playerName, false, 0);
-            Player cpu = new Player(CPUName, false, 0);
-            playerList.add(player);
-            playerList.add(cpu);
     }
 
     @Override

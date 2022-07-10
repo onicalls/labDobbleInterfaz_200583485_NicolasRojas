@@ -1,10 +1,11 @@
-package com.onicalls;
+package com.onicalls.gui;
+
+import com.onicalls.gui.MenuMultijugador;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Scanner;
 
 /**
  * Clase MenuPrincipal.
@@ -26,7 +27,7 @@ public class MenuPrincipal extends JFrame implements ActionListener {
         setSize(500, 500);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        label1 = new JLabel("Seleccione una opción:");
+        label1 = new JLabel("Seleccione una opcion:");
         button1 = new JButton("Partida Multijugador");
         button2 = new JButton("Partida VS CPU");
         button3 = new JButton("Salir");
@@ -48,9 +49,14 @@ public class MenuPrincipal extends JFrame implements ActionListener {
         try{
             if(e.getSource() == button1){
                 new MenuMultijugador().setVisible(true);
+                this.dispose();
+            }
+            else if(e.getSource() == button2){
+                new MenuCPU().setVisible(true);
+                this.dispose();
             }
             if(e.getSource() == button3){
-                this.dispose();
+                System.exit(0);
             }
         } catch (Exception exception) {
             JOptionPane.showMessageDialog(this, "Error!");
