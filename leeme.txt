@@ -1,0 +1,9 @@
+Instrucciones de uso:
+
+Para el correcto uso de este programa debe seguir cuidadosamente las siguientes reglas:
+Lo primero es revisar que los archivos mencionados en el punto 2.5 estén agregados correctamente dentro de la carpeta de su ordenador.
+Puede hacer uso de un IDE como InteliJ IDEA para abrir el proyecto y ejecutarlo desde el botón RUN en la clase labDobbleInterfaz_200583485_NicolasRojas.
+Para ejecutar el código desde la consola de Windows, primero se deben compilar todas clases, comenzando por aquellas que no dependen de otras utilizando el comando javac. Y luego, para ejecutar se utiliza el mismo comando, seguido de la clase principal.
+Al ejecutar el programa se le pedirá al usuario presionar en la pantalla si quiere jugar contra otros jugadores, contra una CPU o cerrar el programa.
+En caso de haber elegido el modo multijugador, se abrirá una pantalla que preguntará la cantidad de elementos que debe tener una carta (intente no usar números mayores a 10) y la cantidad máxima de cartas a generar (si no sabe escriba 0) y los nombres de los jugadores, los cuales para ser añadidos deben presionar el botón “anadir”, para luego presionar “continuar” cuando todos estén registrados.
+El programa abrirá una ventana con el turno del jugador, un cuadro para insertar la opción para adivinar dentro de la carta, un botón para confirmar y la información con la puntuación de los jugadores. Cuando el jugador realiza la jugada cambiará el turno y el siguiente dato a ingresar será para el próximo jugador. También hay otro botón para terminar la partida.
